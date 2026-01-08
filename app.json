@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Alarm App",
+    "slug": "alarm-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.alarmapp.alarm",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "USE_FULL_SCREEN_INTENT",
+        "WAKE_LOCK",
+        "SCHEDULE_EXACT_ALARM",
+        "POST_NOTIFICATIONS",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "./plugins/withAndroidAlarmManifest.js",
+      "expo-asset",
+      "./plugins/notifee-mod.js"
+    ],
+    "scheme": "alarmapp",
+    "newArchEnabled": true
+  }
+}
