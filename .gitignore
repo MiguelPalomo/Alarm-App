@@ -31,7 +31,7 @@ ios/Pods/
 ios/*.xcworkspace/
 ios/*.xcodeproj/project.xcworkspace/
 android/
-
+assets/sounds/
 # Logs
 npm-debug.log*
 yarn-debug.log*
